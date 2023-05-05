@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h2>Student Portal</h2>
+    </header>
+    <section class="main-container">
+        <div class="search-container">
+            <div class="search">
+                <input type="search" id="search-bar" list="browser" value=""/>
+                <datalist id="browser">
+                </datalist>
+            </div>
+            <button class="btn search-btn">Search</button>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn sort-asec">Sort A->Z</button>
+            <button class="btn sort-desc">Sort Z->A</button>
+            <button class="btn sort-marks">Sort By Marks</button>
+            <button class="btn sort-pass">Sort By Passing</button>
+            <button class="btn sort-class">Sort By Class</button>
+            <button class="btn sort-gender">Sort By Gender</button>
+        </div>
+        
+        <div class="table-container">
+            <h1 class="gender">Female Details</h1>
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="table-container">
+            <h1 class="gender">Male Details</h1>
+            <table border="1px" class="male-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
